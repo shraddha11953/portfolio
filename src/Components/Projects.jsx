@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-slate-950 text-white py-24 px-20"
+      className="bg-slate-950 text-white py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -16,13 +16,13 @@ function Projects() {
       >
         {/* Heading */}
 
-        <h2 className="text-5xl font-bold text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
           My <span className="text-cyan-400">Projects</span>
         </h2>
 
-        <div className="w-32 h-1 bg-cyan-400 mx-auto rounded-full mt-4 mb-16"></div>
+        <div className="w-24 sm:w-28 lg:w-32 h-1 bg-cyan-400 mx-auto rounded-full mt-4 mb-10 sm:mb-12 lg:mb-16"></div>
 
-        <p className="text-center text-gray-400 max-w-3xl mx-auto mb-16 leading-7">
+        <p className="text-center text-gray-400 max-w-3xl mx-auto mb-10 sm:mb-12 lg:mb-16 leading-7 text-sm sm:text-base px-2 sm:px-0">
           Here are some of my real-world projects where I worked on
           backend systems, APIs, databases, and full-stack applications.
           Each project demonstrates my problem-solving skills and
@@ -31,7 +31,7 @@ function Projects() {
 
         {/* Projects List */}
 
-        <div className="space-y-16">
+        <div className="space-y-10 sm:space-y-12 lg:space-y-16">
 
           {projects.map((project, index) => (
             <motion.div

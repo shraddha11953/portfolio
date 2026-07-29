@@ -10,7 +10,7 @@ function About() {
   return (
     <section
       id="about"
-      className="bg-slate-950 text-white py-24 px-20"
+      className="bg-slate-950 text-white py-20 md:py-24 px-6 md:px-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -18,26 +18,28 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
           About <span className="text-cyan-400">Me</span>
         </h2>
 
-        <div className="w-28 h-1 bg-cyan-400 mx-auto rounded-full mb-14"></div>
+        <div className="w-24 md:w-28 h-1 bg-cyan-400 mx-auto rounded-full mb-10 md:mb-14"></div>
 
-        <div className="grid grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
 
           {/* Left Side */}
 
           <div>
 
-            <h3 className="text-3xl font-bold mb-6 text-cyan-400">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-cyan-400">
               Python Backend Developer
             </h3>
 
-            <p className="text-gray-300 leading-8 text-lg">
+            <p className="text-gray-300 leading-8 text-base md:text-lg">
               I am a passionate Python Backend Developer with hands-on
               experience in Django, FastAPI, REST APIs, PostgreSQL, and
               scalable backend development.
+
+              <br /><br />
 
               During my internship at ITECHNOPAD, I worked on
               real-world enterprise modules including Role-Based Access
@@ -45,12 +47,14 @@ function About() {
               Pricing, Coupons, Tickets, Leads, Feedback Systems, and
               Map API Integration.
 
+              <br /><br />
+
               I enjoy solving complex backend problems, designing
               optimized database schemas, and building secure,
               maintainable applications.
             </p>
 
-            <div className="mt-8 space-y-3 text-gray-300">
+            <div className="mt-8 space-y-3 text-gray-300 text-sm md:text-base">
 
               <p>
                 <span className="text-cyan-400 font-semibold">
@@ -66,7 +70,7 @@ function About() {
                 Pune, Maharashtra
               </p>
 
-              <p>
+              <p className="break-all">
                 <span className="text-cyan-400 font-semibold">
                   Email :
                 </span>{" "}
@@ -86,21 +90,19 @@ function About() {
 
           {/* Right Side */}
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-900 rounded-xl p-8 border border-slate-700 text-center"
+              className="bg-slate-900 rounded-xl p-5 md:p-8 border border-slate-700 text-center"
             >
-              <FaLaptopCode
-                className="text-cyan-400 text-5xl mx-auto mb-5"
-              />
+              <FaLaptopCode className="text-cyan-400 text-4xl md:text-5xl mx-auto mb-4 md:mb-5" />
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 4+
               </h2>
 
-              <p className="text-gray-400 mt-3">
+              <p className="text-gray-400 mt-3 text-sm md:text-base">
                 Major Projects
               </p>
 
@@ -108,17 +110,15 @@ function About() {
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-900 rounded-xl p-8 border border-slate-700 text-center"
+              className="bg-slate-900 rounded-xl p-5 md:p-8 border border-slate-700 text-center"
             >
-              <FaBriefcase
-                className="text-cyan-400 text-5xl mx-auto mb-5"
-              />
+              <FaBriefcase className="text-cyan-400 text-4xl md:text-5xl mx-auto mb-4 md:mb-5" />
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 1
               </h2>
 
-              <p className="text-gray-400 mt-3">
+              <p className="text-gray-400 mt-3 text-sm md:text-base">
                 Internship
               </p>
 
@@ -126,17 +126,15 @@ function About() {
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-900 rounded-xl p-8 border border-slate-700 text-center"
+              className="bg-slate-900 rounded-xl p-5 md:p-8 border border-slate-700 text-center"
             >
-              <FaCode
-                className="text-cyan-400 text-5xl mx-auto mb-5"
-              />
+              <FaCode className="text-cyan-400 text-4xl md:text-5xl mx-auto mb-4 md:mb-5" />
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 500+
               </h2>
 
-              <p className="text-gray-400 mt-3">
+              <p className="text-gray-400 mt-3 text-sm md:text-base">
                 Coding Problems Solved
               </p>
 
@@ -144,17 +142,15 @@ function About() {
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-slate-900 rounded-xl p-8 border border-slate-700 text-center"
+              className="bg-slate-900 rounded-xl p-5 md:p-8 border border-slate-700 text-center"
             >
-              <FaUserGraduate
-                className="text-cyan-400 text-5xl mx-auto mb-5"
-              />
+              <FaUserGraduate className="text-cyan-400 text-4xl md:text-5xl mx-auto mb-4 md:mb-5" />
 
-              <h2 className="text-4xl font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 MCA
               </h2>
 
-              <p className="text-gray-400 mt-3">
+              <p className="text-gray-400 mt-3 text-sm md:text-base">
                 Vishwakarma University
               </p>
 

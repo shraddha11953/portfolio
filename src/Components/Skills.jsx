@@ -8,14 +8,19 @@ import {
   FaDatabase,
   FaServer,
 } from "react-icons/fa";
-
-import { SiDjango, SiFastapi, SiPostgresql, SiMysql} from "react-icons/si";
+import { FaCode } from "react-icons/fa";
+import {
+  SiDjango,
+  SiFastapi,
+  SiPostgresql,
+  SiMysql,
+} from "react-icons/si";
 
 function Skills() {
   return (
     <section
       id="skills"
-      className="bg-slate-900 text-white py-24 px-20"
+      className="bg-slate-900 text-white py-20 md:py-24 px-6 md:px-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}
@@ -23,21 +28,21 @@ function Skills() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-5xl font-bold text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-center">
           My <span className="text-cyan-400">Skills</span>
         </h2>
 
-        <div className="w-28 h-1 bg-cyan-400 mx-auto rounded-full mt-4 mb-14"></div>
+        <div className="w-28 h-1 bg-cyan-400 mx-auto rounded-full mt-4 mb-10 md:mb-14"></div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
           {/* Languages */}
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="bg-slate-950 p-8 rounded-xl border border-slate-700"
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
           >
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
               Languages
             </h3>
 
@@ -66,9 +71,9 @@ function Skills() {
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="bg-slate-950 p-8 rounded-xl border border-slate-700"
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
           >
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
               Frameworks
             </h3>
 
@@ -92,9 +97,9 @@ function Skills() {
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="bg-slate-950 p-8 rounded-xl border border-slate-700"
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
           >
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
               Databases
             </h3>
 
@@ -118,9 +123,9 @@ function Skills() {
 
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="bg-slate-950 p-8 rounded-xl border border-slate-700"
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
           >
-            <h3 className="text-2xl font-bold text-cyan-400 mb-6">
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
               Backend Development
             </h3>
 
@@ -160,37 +165,38 @@ function Skills() {
 
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="bg-slate-950 p-8 rounded-xl border border-slate-700 mt-8"
+          className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700 mt-8"
         >
-          <h3 className="text-2xl font-bold text-cyan-400 mb-6">
+          <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
             Tools
           </h3>
 
-          <div className="grid grid-cols-5 gap-6 text-center">
-
-            <div>
-              <FaGitAlt className="text-5xl mx-auto text-orange-500" />
-              <p className="mt-3">Git</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
+                        <div>
+              <FaGitAlt className="text-4xl md:text-5xl mx-auto text-orange-500" />
+              <p className="mt-3 text-sm md:text-base">Git</p>
             </div>
 
             <div>
-              <FaGithub className="text-5xl mx-auto" />
-              <p className="mt-3">GitHub</p>
+              <FaGithub className="text-4xl md:text-5xl mx-auto" />
+              <p className="mt-3 text-sm md:text-base">GitHub</p>
             </div>
 
             <div>
-              <FaDatabase className="text-5xl mx-auto text-blue-500" />
-              <p className="mt-3">VS Code</p>
+              <FaCode className="text-4xl md:text-5xl mx-auto text-blue-500" />
+              <p className="mt-3 text-sm md:text-base">VS Code</p>
             </div>
 
             <div>
-              <FaDatabase className="text-5xl mx-auto text-green-500" />
-              <p className="mt-3">Excel</p>
+              <FaDatabase className="text-4xl md:text-5xl mx-auto text-green-500" />
+              <p className="mt-3 text-sm md:text-base">Excel</p>
             </div>
 
             <div>
-              <FaServer className="text-5xl mx-auto text-cyan-400" />
-              <p className="mt-3">Backend APIs</p>
+              <FaServer className="text-4xl md:text-5xl mx-auto text-cyan-400" />
+              <p className="mt-3 text-sm md:text-base">
+                Backend APIs
+              </p>
             </div>
 
           </div>
@@ -203,3 +209,4 @@ function Skills() {
 }
 
 export default Skills;
+          
