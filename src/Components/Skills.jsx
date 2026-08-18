@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import {
   FaPython,
   FaJs,
@@ -7,8 +8,16 @@ import {
   FaGithub,
   FaDatabase,
   FaServer,
+  FaCode,
+  FaDocker,
+  FaJira,
+  FaRobot,
+  FaCloud,
+  FaNetworkWired,
+  FaDesktop,
+  FaTasks,
 } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+
 import {
   SiDjango,
   SiFastapi,
@@ -28,11 +37,15 @@ function Skills() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
+        {/* Heading */}
+
         <h2 className="text-3xl md:text-5xl font-bold text-center">
           My <span className="text-cyan-400">Skills</span>
         </h2>
 
         <div className="w-28 h-1 bg-cyan-400 mx-auto rounded-full mt-4 mb-10 md:mb-14"></div>
+
+        {/* Main Skills */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
@@ -64,7 +77,6 @@ function Skills() {
               </div>
 
             </div>
-
           </motion.div>
 
           {/* Frameworks */}
@@ -90,7 +102,6 @@ function Skills() {
               </div>
 
             </div>
-
           </motion.div>
 
           {/* Databases */}
@@ -116,10 +127,9 @@ function Skills() {
               </div>
 
             </div>
-
           </motion.div>
 
-          {/* Backend */}
+          {/* Backend Development */}
 
           <motion.div
             whileHover={{ scale: 1.03 }}
@@ -131,76 +141,195 @@ function Skills() {
 
             <div className="flex flex-wrap gap-3">
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
-                REST APIs
+              {[
+                "REST APIs",
+                "Authentication",
+                "CRUD Operations",
+                "OOP",
+                "Data Structures",
+                "Algorithms",
+                "RBAC",
+                "API Integration",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+
+            </div>
+          </motion.div>
+
+          {/* Core Computer Science */}
+
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
+              Core Computer Science
+            </h3>
+
+            <div className="flex flex-wrap gap-3">
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full flex items-center gap-2">
+                <FaDatabase />
+                DBMS
               </span>
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
-                Authentication
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full flex items-center gap-2">
+                <FaDesktop />
+                Operating Systems
               </span>
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
-                CRUD Operations
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full flex items-center gap-2">
+                <FaNetworkWired />
+                Computer Networks
               </span>
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
                 OOP
               </span>
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
                 Data Structures
               </span>
 
-              <span className="bg-cyan-500/20 px-4 py-2 rounded-full">
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
                 Algorithms
               </span>
 
             </div>
+          </motion.div>
 
+          {/* Tools & DevOps */}
+
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
+              Tools & DevOps
+            </h3>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+
+              <div>
+                <FaGitAlt className="text-4xl mx-auto text-orange-500" />
+                <p className="mt-3 text-sm">Git</p>
+              </div>
+
+              <div>
+                <FaGithub className="text-4xl mx-auto" />
+                <p className="mt-3 text-sm">GitHub</p>
+              </div>
+
+              <div>
+                <FaCode className="text-4xl mx-auto text-blue-500" />
+                <p className="mt-3 text-sm">VS Code</p>
+              </div>
+
+              <div>
+                <FaDocker className="text-4xl mx-auto text-blue-400" />
+                <p className="mt-3 text-sm">Docker</p>
+              </div>
+
+              <div>
+                <FaJira className="text-4xl mx-auto text-blue-500" />
+                <p className="mt-3 text-sm">Jira</p>
+              </div>
+
+              <div>
+                <FaCloud className="text-4xl mx-auto text-cyan-400" />
+                <p className="mt-3 text-sm">Render</p>
+              </div>
+
+            </div>
+          </motion.div>
+
+          {/* AI Tools */}
+
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700"
+          >
+            <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+              <FaRobot />
+              AI Tools
+            </h3>
+
+            <div className="flex flex-wrap gap-3">
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+                ChatGPT
+              </span>
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+                Claude
+              </span>
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+                Lovable
+              </span>
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+                Emergent
+              </span>
+
+              <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+                AI-Assisted Development
+              </span>
+
+            </div>
           </motion.div>
 
         </div>
 
-        {/* Tools */}
+        {/* Product Management & Deployment */}
 
         <motion.div
           whileHover={{ scale: 1.02 }}
-          className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700 mt-8"
+          className="bg-slate-950 p-6 md:p-8 rounded-xl border border-slate-700 mt-6 md:mt-8"
         >
           <h3 className="text-xl md:text-2xl font-bold text-cyan-400 mb-6">
-            Tools
+            Product & Deployment
           </h3>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 text-center">
-                        <div>
-              <FaGitAlt className="text-4xl md:text-5xl mx-auto text-orange-500" />
-              <p className="mt-3 text-sm md:text-base">Git</p>
-            </div>
+          <div className="flex flex-wrap gap-3">
 
-            <div>
-              <FaGithub className="text-4xl md:text-5xl mx-auto" />
-              <p className="mt-3 text-sm md:text-base">GitHub</p>
-            </div>
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full flex items-center gap-2">
+              <FaTasks />
+              Product Management
+            </span>
 
-            <div>
-              <FaCode className="text-4xl md:text-5xl mx-auto text-blue-500" />
-              <p className="mt-3 text-sm md:text-base">VS Code</p>
-            </div>
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+              Agile Development
+            </span>
 
-            <div>
-              <FaDatabase className="text-4xl md:text-5xl mx-auto text-green-500" />
-              <p className="mt-3 text-sm md:text-base">Excel</p>
-            </div>
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+              Jira
+            </span>
 
-            <div>
-              <FaServer className="text-4xl md:text-5xl mx-auto text-cyan-400" />
-              <p className="mt-3 text-sm md:text-base">
-                Backend APIs
-              </p>
-            </div>
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+              Docker
+            </span>
+
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full flex items-center gap-2">
+              <FaCloud />
+              Render Deployment
+            </span>
+
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+              API Integration
+            </span>
+
+            <span className="bg-cyan-500/20 border border-cyan-500/30 px-4 py-2 rounded-full">
+              Git Workflow
+            </span>
 
           </div>
-
         </motion.div>
 
       </motion.div>
@@ -209,4 +338,3 @@ function Skills() {
 }
 
 export default Skills;
-          

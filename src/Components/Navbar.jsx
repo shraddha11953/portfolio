@@ -10,6 +10,7 @@ function Navbar() {
     "About",
     "Skills",
     "Experience",
+     "Achievements",
     "Projects",
     "Contact",
   ];
